@@ -16,6 +16,7 @@ public class Picture
     private Triangle roof;
     private Circle sun;
     private Square floor;
+    private Person person;
 
     /**
      * Constructor for objects of class Picture
@@ -104,5 +105,13 @@ public class Picture
     {
         if (sun != null)  // only if it´s up already
         sun.slowMoveVertical(350);
+        person = new Person();
+        person.moveHorizontal(-250);
+        person.moveVertical(25);
+        person.makeVisible();
+        person.slowMoveHorizontal(120);
+        
+        
+        
     }
 }
