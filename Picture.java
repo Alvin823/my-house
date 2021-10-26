@@ -95,4 +95,14 @@ public class Picture
             sun.changeColor("yellow");
         }
     }
+    
+    
+    /**
+     * Provocar atardecer
+     */
+    public void atardecer()
+    {
+        if (sun != null)  // only if it´s up already
+        sun.slowMoveVertical(350);
+    }
 }
